@@ -1,8 +1,52 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.alu201416282.healthymeal.MapsActivity" />
+    android:layout_width="match_parent"
+    tools:context="com.example.alu201416282.healthymeal.MapsActivity"
+    >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.alu201416282.healthymeal.MapsActivity" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:layout_height="50dp"
+            android:layout_width="290dp"
+            android:background="@drawable/search_field"
+            android:id="@+id/searchField"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:typeface="monospace"
+            android:textSize="25sp"
+            android:maxEms="24"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginTop="5dp"
+            />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingTop="12dp"
+            android:background="@drawable/search_button"
+            android:layout_marginLeft="10dp"
+
+            />
+
+    </LinearLayout>
+
+
+</FrameLayout>
